@@ -27,7 +27,7 @@ st.header("Fruityvice Fruit Advice!")
 # new section to display fruityvice api response
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ "kiwi")
-st.text(fruityvice_response.json())
+
 
 
 # take json version and normalize 
