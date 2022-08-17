@@ -28,3 +28,9 @@ st.header("Fruityvice Fruit Advice!")
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 st.text(fruityvice_response.json())
+
+
+# take json version and normalize 
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+# output it the screen as table
+streamlit.dataframe(fruityvice_normalized)
