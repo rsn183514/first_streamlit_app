@@ -50,3 +50,7 @@ st.dataframe(my_data_rows)
 
 add_my_fruit = st.text_input('What fruit would you like to add ?','jackfruit')
 st.text('Thanks for adding jackfruit')
+st.write('Thanks for adding ', add_my_fruit)
+
+# this will not work
+my_cur.execute("Insert into fruit_load_list values ('from steamlist')")
