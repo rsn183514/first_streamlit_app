@@ -26,18 +26,13 @@ st.dataframe(fruits_to_show)
 
 # new section to display fruityvice api response
 st.header("Fruityvice Fruit Advice!")
-try:
-    fruit_choice = st.text_input('What fruit would you like information about?')
-    if not fruit_choice:
-        st.error("Please select a fruit to get information. ")
-    else:
+    fruit_choice = st.text_input('What fruit would you like information about?' 'Kiwi')
+ 
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
-    # fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-    # st.dataframe(fruityvice_normalized)
+    fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+    st.dataframe(fruityvice_normalized)
 
- # except URLError as e:
-  #  st.error()
-  
+
 
 #import snowflake.connector
 
