@@ -35,8 +35,8 @@ try:
     # fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     # st.dataframe(fruityvice_normalized)
 
-  except URLError as e:
-    st.error()
+ # except URLError as e:
+  #  st.error()
   
 
 #import snowflake.connector
