@@ -49,5 +49,4 @@ st.dataframe(my_data_rows)
 
 
 add_my_fruit = st.text_input('What fruit would you like to add ?','jackfruit')
-st.write('The user entered ', add_my_fruit)
 st.text('Thanks for adding jackfruit')
